@@ -13,6 +13,7 @@ from test import test
 source_train = os.path.join('data', "skype", "skype_forum.train.json")
 source_eval = os.path.join('data', "skype", "skype_forum.eval.json")
 target_train = os.path.join('data', 'skype', "skype_review.json")
+embedding_file = ""
 model_root = os.path.join('models')
 cuda = True
 cudnn.benchmark = True
