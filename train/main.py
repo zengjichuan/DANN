@@ -63,9 +63,9 @@ for p in my_net.parameters():
 
 for epoch in xrange(n_epoch):
 
-    len_dataloader = min(len(dataloader_source), len(dataloader_target))
-    data_source_iter = iter(dataloader_source)
-    data_target_iter = iter(dataloader_target)
+    len_dataloader = min(len(dataloader_source_train), len(dataloader_target_train))
+    data_source_iter = iter(dataloader_source_train)
+    data_target_iter = iter(dataloader_target_train)
 
     i = 0
     while i < len_dataloader:
